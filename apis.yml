@@ -1,8 +1,25 @@
 aid: carbon-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carbon-health.png
 name: Carbon Health
-description: Carbon Health is a company surfaced as a portfolio company of 500-global, dcvc and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Carbon Health is a technology-enabled healthcare provider offering primary, urgent, virtual,
+  and pediatric care through in-person clinics and telemedicine across the United States. It operates on
+  its own clinical technology platform (CarbyOS) and offers services including same-day appointments,
+  cold/flu/COVID testing, STI/STD testing, sports physicals, occupational and workplace health, and
+  clinical research for sponsors. Carbon Health was surfaced as a portfolio company of 500 Global and DCVC
+  and added to the API Evangelist network. No public developer API, OpenAPI, or FHIR patient-access
+  surface was found during enrichment; this profile captures the company identity, public web properties,
+  and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/carbon-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Telemedicine
+- Urgent Care
+- Primary Care
+- Digital Health
+- Clinical Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carbon-health-domain-security.yml
 - type: Website
   url: https://carbonhealth.com
+- type: Blog
+  url: https://carbonhealth.com/blog
+- type: Support
+  url: https://support.carbonhealth.com
+- type: PrivacyPolicy
+  url: https://carbonhealth.com/privacy-policy
+- type: TermsOfService
+  url: https://carbonhealth.com/terms-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
